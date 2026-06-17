@@ -15,7 +15,7 @@ int main(void) {
 	int a,b,sum;
 	printf("enter any 2 number \n");
 	scanf("%d %d",&a,&b);
-	sum=a+b;
+	sum=a+sum;
 	printf("sum is %d",sum);
 	return EXIT_SUCCESS;
 }
