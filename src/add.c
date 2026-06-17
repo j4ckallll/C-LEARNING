@@ -12,10 +12,11 @@
 #include <stdlib.h>
 
 int main(void) {
-	int a,b,sum;
-	printf("enter any 2 number \n");
-	scanf("%d %d",&a,&b);
-	sum=a+sum;
-	printf("sum is %d",sum);
-	return EXIT_SUCCESS;
+	float a,b,c,avg;
+	printf("Enter three number \n");
+	scanf("%f%f%f",&a,&b,&c);
+	avg=(a+b+c)/3;
+	printf("Average is %f",avg);
+return EXIT_SUCCESS;
+
 }
