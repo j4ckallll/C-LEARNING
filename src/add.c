@@ -12,6 +12,10 @@
 #include <stdlib.h>
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	int a,b,sum;
+	printf("enter any 2 number \n");
+	scanf("%d %d",&a,&b);
+	sum=a+b;
+	printf("sum is %d",sum);
 	return EXIT_SUCCESS;
 }
