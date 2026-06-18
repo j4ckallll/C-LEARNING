@@ -13,16 +13,31 @@
 
 int main(void)
 {
-	int a,b;
-	printf("Enter two number \n");
-	scanf("%d %d", &a, &b);
-	if(a>b)
+	int a,b,c;
+	printf("Enter three number \n");
+	scanf("%d %d %d",&a, &b, &c);
+
+
+	if(a>=b)
 	{
-		printf("The greatest number is %d",a);
+		if(a>=c)
+		{
+			printf("The greatest number is %d",a);
+		}
 	}
-	else
+
+
+	else if (b>=a)
 	{
-		printf("The greatest number is %d",b);
+		if(b>=c)
+		{
+			printf("The greatest number is %d",b);
+		}
+	}
+
+    else
+	{
+		printf("The greatest number is %d",c);
 
 	}
 	return EXIT_SUCCESS;
