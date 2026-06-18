@@ -13,13 +13,20 @@
 
 int main(void)
 {
-	int a=10,b=20,temp;
+	int num;
+	printf("Enter a number : " );
+	scanf("%d",&num);
+	if(num>0)
+	{
+	    printf("The number is positive");
+	}
+	else
+	{
+		printf("The number is negative");
+	};
 
-	temp=a;
-	a=b;
-	b=temp;
 
-	printf("a=%d  b=%d",a,b);
+
 
 return EXIT_SUCCESS;
 
