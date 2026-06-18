@@ -11,12 +11,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-	float a,b,c,avg;
-	printf("Enter three number \n");
-	scanf("%f%f%f",&a,&b,&c);
-	avg=(a+b+c)/3;
-	printf("Average is %f",avg);
+int main(void)
+{
+	int a=10,b=20,temp;
+
+	temp=a;
+	a=b;
+	b=temp;
+
+	printf("a=%d  b=%d",a,b);
+
 return EXIT_SUCCESS;
 
 }
