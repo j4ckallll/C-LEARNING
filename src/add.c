@@ -13,26 +13,28 @@
 
 int main(void)
 {
-	int num;
-	printf("Enter a number : " );
-	scanf("%d",&num);
-	if(num>0)
+	int a,b;
+	printf("Enter two number \n");
+	scanf("%d %d", &a, &b);
+	if(a>b)
 	{
-	    printf("The number is positive");
-	}
-	else if(num==0)
-	{
-		printf("The number is neutral");
+		printf("The greatest number is %d",a);
 	}
 	else
 	{
-		printf("The number is negative");
+		printf("The greatest number is %d",b);
+
 	}
-
-
-
-
-
-return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 
 }
+
+
+
+
+
+
+
+
+
+
