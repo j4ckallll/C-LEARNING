@@ -13,37 +13,46 @@
 
 int main(void)
 {
-	int a,b,c;
-	printf("Enter three number \n");
-	scanf("%d %d %d",&a, &b, &c);
+	int a,b,c,result;
+	printf("Enter a number :\n");
+	scanf("%d%d",&a,&b);
+	printf("Enter 1 for addition \nEnter 2 for subraction \nEnter 3 for multiplication \nEnter 4 for division \n");
+	scanf("%d",&c);
 
-
-	if(a>=b)
+	if(c==1)
 	{
-		if(a>=c)
-		{
-			printf("The greatest number is %d",a);
-		}
+		result=a+b;
+		printf("Result = %d",result);
 	}
 
 
-	else if (b>=a)
+	else if(c==2)
 	{
-		if(b>=c)
-		{
-			printf("The greatest number is %d",b);
-		}
+		result=a-b;
+		printf("Result = %d",result);
 	}
 
-    else
-	{
-		printf("The greatest number is %d",c);
 
+	else if(c==3)
+	{
+		result=a*b;
+		printf("Result = %d",result);
 	}
+
+
+	else if(c==4)
+	{
+		printf("Result = %d",result);
+	}
+
+	else
+	{
+		printf("YOU ARE A FOOL!!!!!!");
+	}
+
 	return EXIT_SUCCESS;
 
 }
-
 
 
 
