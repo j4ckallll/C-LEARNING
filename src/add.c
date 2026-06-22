@@ -13,51 +13,27 @@
 
 int main(void)
 {
-	int a,b,c,result;
-	printf("Enter a number :\n");
-	scanf("%d%d",&a,&b);
-	printf("Enter 1 for addition \nEnter 2 for subraction \nEnter 3 for multiplication \nEnter 4 for division \nEnter 5 for modlus");
-	scanf("%d",&c);
-
-	if(c==1)
+	int choise;
+	printf("1 for porotta \n2 for biriyani \n3 for mandhi \n4 for ssfast pani puri \nenter your order\n");
+	scanf("%d",&choise);
+	switch (choise)
 	{
-		result=a+b;
-		printf("Result = %d",result);
+	case 1:
+	    printf("you have selected porotta");
+		break;
+	case 2:
+	    printf("you have selected biriyani");
+		break;
+	case 3:
+	    printf("youn have selected mandhi");
+		break;
+	case 4:
+		printf("you have selected ssfast pani puri");
+		break;
+	default:
+	 	printf("item not in the menu");		
 	}
 
-
-	else if(c==2)
-	{
-		result=a-b;
-		printf("Result = %d",result);
-	}
-
-
-	else if(c==3)
-	{
-		result=a*b;
-		printf("Result = %d",result);
-	}
-
-
-	else if(c==4)
-	{
-		result=a/=b;
-		printf("Result = %d",result);
-	}
-
-
-	else if(c==5)
-	{
-		result=a%b;
-		printf("result = %d",result);
-	}
-
-
-	else
-	{
-		printf("YOU ARE A FOOL!!!!!!");
-	}
 
 	return EXIT_SUCCESS;
 
