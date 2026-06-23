@@ -13,27 +13,11 @@
 
 int main(void)
 {
-	int choise;
-	printf("1 for porotta \n2 for biriyani \n3 for mandhi \n4 for ssfast pani puri \nenter your order\n");
-	scanf("%d",&choise);
-	switch (choise)
+	int i;
+	for(i=1;i<=100;i++)
 	{
-	case 1:
-	    printf("you have selected porotta");
-		break;
-	case 2:
-	    printf("you have selected biriyani");
-		break;
-	case 3:
-	    printf("youn have selected mandhi");
-		break;
-	case 4:
-		printf("you have selected ssfast pani puri");
-		break;
-	default:
-	 	printf("item not in the menu");		
+		printf("%d\n",i);
 	}
-
 
 	return EXIT_SUCCESS;
 
