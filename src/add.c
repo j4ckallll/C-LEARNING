@@ -13,15 +13,18 @@
 
 int main(void)
 {
-	int num,i,sum=0;
+	int num,i;
 	printf("Enter a number ");
 	scanf("%d",&num);
-	for(i=1;i<=num;i++)
-	{
-		sum=sum+i;	
+	 for(i=2;i<=num;i++)
+	 {
+		if(i%2==0)
+	 {
+		printf("%d\n",i);
+
+	 }
 	}
-	printf("result is %d",sum);
-	
+	 
 	return EXIT_SUCCESS;
 
 }
